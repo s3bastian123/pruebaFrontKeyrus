@@ -1,0 +1,44 @@
+body{
+  width:100%;
+  height:auto;
+  margin:0 auto;
+}
+
+h1,h3,h4,h5,h6,p{
+  margin-bottom:10px;
+
+}
+
+h1,h2,h3,h4,h5,h6,p,li,a,span,strong,i{
+
+  &::selection {
+    color: black;
+    background: blue;
+  }
+
+  &::-moz-selection {
+    color: black;
+    background: blue;
+  }
+}
+
+b, strong{
+ font-weight: bold;
+}
+
+u{
+ text-decoration: underline;
+}
+
+i{
+ font-style: italic;
+}
+
+$myriadBold: "myriadBold";
+@include fontFace($myriadBold, "myriadBold");
+
+$myriadItalic: "myriadItalic";
+@include fontFace($myriadItalic, "myriadItalic");
+
+$myriadRegular: "myriadRegular";
+@include fontFace($myriadRegular, "myriadRegular");

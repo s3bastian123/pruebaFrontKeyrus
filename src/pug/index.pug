@@ -1,0 +1,39 @@
+html
+  head
+    meta(charset='utf-8')
+    title Prueba Frontend
+    meta(name="author" content="Juan Sebastián López Roncancio")
+    meta(http-equiv="X-UA_compatible" content="IE=edge,chrome=1")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="../assets/css/style.css")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous")
+    script(src="https://code.jquery.com/jquery-1.9.1.min.js")
+    script(src="../assets/js/validate.js")
+  body
+    .alerts
+      .alert.alert-danger.alert_bad.col-7.hide(role="alert") Digite seu email e senha
+      .alert.alert-success.alert_good.col-7.hide(role="alert") Você foi logado com sucesso
+    form.form.col-4
+      label.title_form Entrar na minha conta
+      .form-group.col-6
+        input.input_form.form-control(type='email', aria-describedby='emailHelp', placeholder='Email' name="email")
+        .ico_form
+      .form-group.col-6
+        input.input_form.form-control(type='password', placeholder='Senha' name="password")
+        .ico_form
+      button.btn.btn-primary.btn_form(type='submit') Entrar
+      .form-group.form-check
+        input#exampleCheck1(type='checkbox')
+        label.label_form(for='exampleCheck1') Mantenha-me conectado
+    a.form_register.col-4(href="#") Precisa de uma conta? 
+      label.label_register.text-primary Inscrever-se
+      
+    span.form_recovery.col-4(href="#") Esqueceu sua senha? 
+      a.label_recovery.text-primary(href="#") Clique aqui.
+      
+    .footer.col-5
+      .info_footer.bg-secondary i
+      .text_footer.bg-white Keyrus
+    
+
+      

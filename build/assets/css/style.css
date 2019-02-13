@@ -1,0 +1,329 @@
+/* line 1, src/scss/common/_fonts.scss */
+body {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* line 7, src/scss/common/_fonts.scss */
+h1, h3, h4, h5, h6, p {
+  margin-bottom: 10px;
+}
+
+/* line 14, src/scss/common/_fonts.scss */
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, li::selection, a::selection, span::selection, strong::selection, i::selection {
+  color: black;
+  background: blue;
+}
+
+/* line 19, src/scss/common/_fonts.scss */
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, li::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, i::-moz-selection {
+  color: black;
+  background: blue;
+}
+
+/* line 25, src/scss/common/_fonts.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 29, src/scss/common/_fonts.scss */
+u {
+  text-decoration: underline;
+}
+
+/* line 33, src/scss/common/_fonts.scss */
+i {
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "myriadBold";
+  src: url("../fonts/myriadBold.woff") format("woff"), url("../fonts/myriadBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "myriadItalic";
+  src: url("../fonts/myriadItalic.woff") format("woff"), url("../fonts/myriadItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "myriadRegular";
+  src: url("../fonts/myriadRegular.woff") format("woff"), url("../fonts/myriadRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 1, src/scss/components/_form.scss */
+body {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  min-height: auto;
+  max-height: initial;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+/* line 6, src/scss/components/_form.scss */
+.alerts {
+  margin-top: 100px;
+}
+
+/* line 9, src/scss/components/_form.scss */
+.alert {
+  text-align: right;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 14, src/scss/components/_form.scss */
+.alert.hide {
+  display: none;
+}
+
+/* line 18, src/scss/components/_form.scss */
+.alert:before {
+  content: "";
+  width: 16px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+}
+
+/* line 27, src/scss/components/_form.scss */
+.alert:nth-of-type(1) {
+  background: #ee7171;
+  border-color: #db5252;
+  border-radius: 10px;
+}
+
+/* line 32, src/scss/components/_form.scss */
+.alert:nth-of-type(1):before {
+  background-image: url("../images/bad.png");
+  background-repeat: no-repeat;
+  height: 16px;
+  min-height: auto;
+  max-height: initial;
+  background-position: center;
+}
+
+/* line 37, src/scss/components/_form.scss */
+.alert:nth-of-type(2) {
+  background: #64e0a2;
+  border-color: #49cf8b;
+  border-radius: 10px;
+}
+
+/* line 42, src/scss/components/_form.scss */
+.alert:nth-of-type(2):before {
+  background-image: url("../images/good.png");
+  background-repeat: no-repeat;
+  height: 16px;
+  min-height: auto;
+  max-height: initial;
+  background-position: center;
+}
+
+/* line 47, src/scss/components/_form.scss */
+.form {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 20px;
+  background-image: url("../images/backgroundForm.png");
+  background-repeat: no-repeat;
+  height: 277px;
+  min-height: auto;
+  max-height: initial;
+  background-position: center;
+}
+
+/* line 53, src/scss/components/_form.scss */
+.form .title_form {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1;
+  font-family: "myriadBold";
+  color: #939797;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin: 20px 0;
+  display: block;
+  text-align: center;
+}
+
+/* line 61, src/scss/components/_form.scss */
+.form .form-group {
+  position: relative;
+  margin: 10px auto;
+}
+
+/* line 67, src/scss/components/_form.scss */
+.form .form-group:nth-of-type(1) .ico_form {
+  background-image: url("../images/name.png");
+  background-repeat: no-repeat;
+  height: 15px;
+  min-height: auto;
+  max-height: initial;
+  background-position: center;
+}
+
+/* line 75, src/scss/components/_form.scss */
+.form .form-group:nth-of-type(2) .ico_form {
+  background-image: url("../images/lock.png");
+  background-repeat: no-repeat;
+  height: 15px;
+  min-height: auto;
+  max-height: initial;
+  background-position: center;
+}
+
+/* line 82, src/scss/components/_form.scss */
+.form .btn_form {
+  margin: 0 auto;
+  display: inherit;
+  width: 114px;
+}
+
+/* line 89, src/scss/components/_form.scss */
+.form .form-check {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* line 94, src/scss/components/_form.scss */
+.form .input_form {
+  background: #f7f6f6;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1;
+  font-family: "myriadRegular";
+  color: #939797;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin-top: 0;
+  position: relative;
+}
+
+/* line 101, src/scss/components/_form.scss */
+.form .ico_form {
+  width: 15px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+/* line 108, src/scss/components/_form.scss */
+.form .label_form {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1;
+  font-family: "myriadRegular";
+  color: #939797;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin-bottom: 0;
+}
+
+/* line 114, src/scss/components/_form.scss */
+.form_register, .form_recovery {
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+
+/* line 119, src/scss/components/_form.scss */
+.form_register {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1;
+  font-family: "myriadRegular";
+  color: #939797;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* line 124, src/scss/components/_form.scss */
+.form_register .label_register {
+  text-decoration: underline;
+}
+
+/* line 130, src/scss/components/_form.scss */
+.form_recovery {
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 1;
+  font-family: "myriadRegular";
+  color: #939797;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* line 133, src/scss/components/_form.scss */
+.form_recovery .label_recovery {
+  text-decoration: none;
+}
+
+/* line 138, src/scss/components/_form.scss */
+.footer {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 142, src/scss/components/_form.scss */
+.footer * {
+  text-align: center;
+  padding: 0;
+}
+
+/* line 147, src/scss/components/_form.scss */
+.footer .info_footer {
+  width: 30px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1;
+  font-family: "myriadBold";
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  display: inline-block;
+  padding: 4px 0;
+  vertical-align: top;
+}
+
+/* line 156, src/scss/components/_form.scss */
+.footer .text_footer {
+  width: 460px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1;
+  font-family: "myriadItalic";
+  color: #939797;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  display: inline-block;
+  padding: 7px 0;
+  vertical-align: top;
+}
+
+/*# sourceMappingURL=maps/style.css.map */

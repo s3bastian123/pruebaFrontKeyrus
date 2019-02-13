@@ -1,0 +1,163 @@
+body{
+  @include image("background.png", 100%);
+  background-repeat: repeat;
+}
+
+.alerts{
+  margin-top: 100px;
+}
+.alert{
+  text-align: right;
+  margin: 0 auto;
+  position: relative;
+
+  &.hide{
+    display: none;
+  }
+
+  &:before{
+    content: "";
+    width: 16px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+  }
+
+
+  &:nth-of-type(1){
+    background: $red1;
+    border-color: $red2;
+    border-radius: 10px;
+
+    &:before{
+      @include image("bad.png", 16px);
+    }
+  }
+
+  &:nth-of-type(2){
+    background: $green1;
+    border-color: $green2;
+    border-radius: 10px;
+
+    &:before{
+      @include image("good.png", 16px);
+    }
+  }
+}
+.form{
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding-top: 20px;
+  @include image("backgroundForm.png", 277px);
+
+  .title_form{
+    @include font-family($myriadBold, 1, 18px, $gray2);
+    margin: 20px 0;
+    display:block;
+    text-align: center;
+
+  }
+
+  .form-group{
+    position: relative;
+    margin: 10px auto;
+
+    &:nth-of-type(1){
+
+      .ico_form{
+        @include image("name.png", 15px);
+      }
+
+    }
+
+    &:nth-of-type(2){
+
+      .ico_form{
+        @include image("lock.png", 15px);
+      }
+
+    }
+  }
+
+  .btn_form{
+    margin: 0 auto;
+    display: inherit;
+    width: 114px;
+
+  }
+
+  .form-check{
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .input_form{
+    background: $gray1;
+    @include font-family($myriadRegular, 1, 14px, $gray2);
+    margin-top: 0;
+    position: relative;
+  }
+
+  .ico_form{
+    width: 15px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+
+  .label_form{
+    @include font-family($myriadRegular, 1, 12px, $gray2);
+    margin-bottom: 0;
+  }
+}
+
+.form_register, .form_recovery{
+  margin: 20px auto;
+  display: block;
+  text-align: center;
+}
+.form_register{
+  @include font-family($myriadRegular, 1, 14px, $gray2);
+  text-decoration: underline;
+  font-weight: 600;
+
+  .label_register{
+    text-decoration: underline;
+  }
+}
+
+
+.form_recovery{
+  @include font-family($myriadRegular, 1, 11px, $gray2);
+
+  .label_recovery{
+    text-decoration: none;
+  }
+}
+
+.footer{
+  display: block;
+  margin: 0 auto;
+
+  *{
+    text-align: center;
+    padding: 0;
+  }
+
+  .info_footer{
+    width: 30px;
+    @include font-family($myriadBold, 1, 18px, $white);
+    display: inline-block;
+    padding: 4px 0;
+    vertical-align: top;
+
+  }
+
+  .text_footer{
+    width: 460px;
+    @include font-family($myriadItalic, 1, 12px, $gray2);
+    display: inline-block;
+    padding: 7px 0;
+    vertical-align: top;
+  }
+}
